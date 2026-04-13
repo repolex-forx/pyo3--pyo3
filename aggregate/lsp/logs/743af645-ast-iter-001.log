@@ -1,0 +1,7 @@
+[2026-04-13T09:42:09Z] === AST ITERATION 1 START | repo=pyo3/pyo3 sha=743af645 ===
+[2026-04-13T09:42:09Z] [iter=1] PHASE START: ast repo=pyo3/pyo3 sha=743af645
+[2026-04-13T09:42:09Z] [iter=1] Building AST aggregate chunks
+[2026-04-13T09:47:45Z] [iter=1] AST chunks built count=1 triples=3977106
+[2026-04-13T09:47:45Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/743af645e7143be6abe2217aafaa0540cf532af4/.complete
+[2026-04-13T09:47:45Z] [iter=1] PHASE END: ast elapsed_s=336 elapsed_min=5.6
+[2026-04-13T09:47:45Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
