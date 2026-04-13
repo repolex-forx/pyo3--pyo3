@@ -1,0 +1,120 @@
+[2026-04-13T14:13:35Z] === ENRICH ITERATION 2 START | repo=pyo3/pyo3 sha=743af645 ===
+[2026-04-13T14:13:35Z] [iter=2] PHASE START: enrich repo=pyo3/pyo3 sha=743af645 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/743af645-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/743af645e7143be6abe2217aafaa0540cf532af4.nq.gz
+[2026-04-13T14:14:10Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-13T14:14:42Z] [iter=2] AST store loaded triples=3977101 load_secs=31 mem_mb=904 MB
+[2026-04-13T14:14:42Z] [iter=2] Step 2: Finding LSP targets mem_mb=904 MB
+[2026-04-13T14:14:49Z] [iter=2] LSP targets found call_sites=30306 imports=1432 extends=31 implements=407 secs=8
+[2026-04-13T14:14:53Z] [iter=2] Loaded checkpoint partial graph triples=83962
+[2026-04-13T14:14:59Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=904 MB
+[2026-04-13T14:15:23Z] [iter=2] Position index built positions=273843 nodes_with_types=326223 secs=24 mem_mb=1056 MB
+[2026-04-13T14:15:23Z] [iter=2] Step 3: Starting LSP resolution mem_mb=1056 MB already_completed_types=[] already_completed_files=91
+[2026-04-13T14:15:23Z] [iter=2] Resolving target type target_type=call_site count=30306
+[2026-04-13T14:15:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=2.1 files_done=0 resolved=0 errors=0 current=pyo3-macros-backend/src/method.rs
+[2026-04-13T14:20:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=7.4 files_done=1 resolved=123 errors=183 current=tests/test_getter_setter.rs
+[2026-04-13T14:22:56Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=9.3 files_done=2 resolved=128 errors=253 current=tests/test_exceptions.rs
+[2026-04-13T14:23:34Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=10.0 files_done=3 resolved=143 errors=277 current=src/types/set.rs
+[2026-04-13T14:26:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=13.0 files_done=4 resolved=195 errors=391 current=src/pycell/impl_.rs
+[2026-04-13T14:29:26Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=15.8 files_done=5 resolved=290 errors=497 current=src/pyclass/create_type_object.rs
+[2026-04-13T14:31:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=17.7 files_done=6 resolved=386 errors=568 current=src/conversions/uuid.rs
+[2026-04-13T14:33:26Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=19.8 files_done=8 resolved=425 errors=648 current=tests/test_methods.rs
+[2026-04-13T14:39:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=26.2 files_done=9 resolved=445 errors=887 current=src/sync/critical_section.rs
+[2026-04-13T14:42:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=29.0 files_done=10 resolved=512 errors=992 current=src/conversions/std/vec.rs
+[2026-04-13T14:44:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=30.5 files_done=11 resolved=531 errors=1050 current=src/pycell.rs
+[2026-04-13T14:46:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=33.0 files_done=12 resolved=603 errors=1143 current=pyo3-macros-backend/src/pymethod.rs
+[2026-04-13T14:59:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=46.1 files_done=13 resolved=773 errors=1640 current=src/exceptions.rs
+[2026-04-13T15:06:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=53.1 files_done=14 resolved=795 errors=1900 current=pyo3-ffi/src/pybuffer.rs
+[2026-04-13T15:07:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=54.0 files_done=17 resolved=806 errors=1936 current=pytests/src/comparisons.rs
+[2026-04-13T15:10:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=56.4 files_done=19 resolved=850 errors=2027 current=src/types/mapping.rs
+[2026-04-13T15:13:13Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=59.6 files_done=20 resolved=894 errors=2146 current=src/types/mutex.rs
+[2026-04-13T15:14:56Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=61.3 files_done=21 resolved=967 errors=2210 current=src/impl_/pymethods.rs
+[2026-04-13T15:17:26Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=63.9 files_done=22 resolved=988 errors=2304 current=src/types/module.rs
+[2026-04-13T15:19:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=66.0 files_done=23 resolved=1029 errors=2384 current=src/inspect/mod.rs
+[2026-04-13T15:20:38Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=67.0 files_done=27 resolved=1039 errors=2423 current=src/conversions/hashbrown.rs
+[2026-04-13T15:22:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=69.2 files_done=31 resolved=1097 errors=2504 current=src/conversions/std/ipaddr.rs
+[2026-04-13T15:23:45Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=70.2 files_done=32 resolved=1110 errors=2540 current=pyo3-ffi/src/unicodeobject.rs
+[2026-04-13T15:30:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=77.0 files_done=34 resolved=1255 errors=2797 current=src/types/bytearray.rs
+[2026-04-13T15:33:45Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=80.2 files_done=35 resolved=1308 errors=2914 current=tests/test_utils/mod.rs
+[2026-04-13T15:34:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=81.2 files_done=36 resolved=1333 errors=2953 current=pyo3-ffi-check/macro/src/lib.rs
+[2026-04-13T15:35:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=82.1 files_done=44 resolved=1356 errors=2987 current=pyo3-macros-backend/src/frompyobject.rs
+[2026-04-13T15:38:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=85.3 files_done=45 resolved=1422 errors=3106 current=src/conversions/std/num.rs
+[2026-04-13T15:43:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=89.9 files_done=46 resolved=1502 errors=3283 current=tests/test_declarative_module.rs
+[2026-04-13T15:44:38Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=91.0 files_done=47 resolved=1508 errors=3326 current=src/impl_/callback.rs
+[2026-04-13T15:45:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=91.7 files_done=48 resolved=1519 errors=3351 current=pyo3-macros-backend/src/attributes.rs
+[2026-04-13T15:47:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=93.8 files_done=49 resolved=1615 errors=3429 current=src/impl_/pyfunction.rs
+[2026-04-13T15:48:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=94.9 files_done=50 resolved=1624 errors=3473 current=pyo3-ffi/src/datetime.rs
+[2026-04-13T15:49:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=96.3 files_done=51 resolved=1633 errors=3524 current=src/conversions/anyhow.rs
+[2026-04-13T15:51:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=98.4 files_done=54 resolved=1654 errors=3605 current=pyo3-macros-backend/src/konst.rs
+[2026-04-13T15:53:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=99.9 files_done=57 resolved=1689 errors=3664 current=pyo3-benches/benches/bench_tuple.rs
+[2026-04-13T15:54:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=100.7 files_done=59 resolved=1724 errors=3693 current=pyo3-ffi/src/compat/py_3_15.rs
+[2026-04-13T15:56:00Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=102.4 files_done=61 resolved=1747 errors=3758 current=src/conversions/std/cstring.rs
+[2026-04-13T15:57:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=103.5 files_done=62 resolved=1773 errors=3801 current=tests/test_various.rs
+[2026-04-13T15:58:54Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=105.3 files_done=63 resolved=1779 errors=3868 current=tests/test_bytes.rs
+[2026-04-13T15:59:27Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=105.9 files_done=64 resolved=1783 errors=3889 current=tests/test_static_slots.rs
+[2026-04-13T16:02:23Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=108.8 files_done=68 resolved=1844 errors=4000 current=src/types/num.rs
+[2026-04-13T16:02:56Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=109.3 files_done=69 resolved=1873 errors=4021 current=pyo3-ffi/src/cpython/unicodeobject.rs
+[2026-04-13T16:03:53Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=110.3 files_done=70 resolved=1922 errors=4057 current=pyo3-benches/benches/bench_call.rs
+[2026-04-13T16:05:53Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=112.3 files_done=72 resolved=1959 errors=4133 current=src/impl_/pyclass/probes.rs
+[2026-04-13T16:08:16Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=114.7 files_done=74 resolved=2005 errors=4224 current=pyo3-ffi/src/methodobject.rs
+[2026-04-13T16:09:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=116.1 files_done=77 resolved=2048 errors=4278 current=tests/ui/invalid_result_conversion.rs
+[2026-04-13T16:11:44Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=118.1 files_done=79 resolved=2082 errors=4355 current=tests/test_super.rs
+[2026-04-13T16:14:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=120.5 files_done=83 resolved=2121 errors=4444 current=pyo3-ffi/src/sliceobject.rs
+[2026-04-13T16:15:28Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=121.9 files_done=88 resolved=2147 errors=4497 current=src/impl_/frompyobject.rs
+[2026-04-13T16:16:06Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=122.5 files_done=89 resolved=2162 errors=4521 current=pytests/src/datetime.rs
+[2026-04-13T16:17:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=123.9 files_done=90 resolved=2163 errors=4574 current=src/types/slice.rs
+[2026-04-13T16:18:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=124.6 files_done=91 resolved=2182 errors=4600 current=pyo3-ffi/src/refcount.rs
+[2026-04-13T16:19:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=125.9 files_done=93 resolved=2240 errors=4651 current=pyo3-ffi/src/descrobject.rs
+[2026-04-13T16:20:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=127.1 files_done=98 resolved=2296 errors=4693 current=pyo3-ffi/src/objimpl.rs
+[2026-04-13T16:22:06Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=128.5 files_done=100 resolved=2313 errors=4748 current=src/types/function.rs
+[2026-04-13T16:22:53Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=129.3 files_done=101 resolved=2323 errors=4778 current=pyo3-ffi/src/compat/py_3_14.rs
+[2026-04-13T16:25:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=131.6 files_done=103 resolved=2402 errors=4866 current=examples/decorator/src/lib.rs
+[2026-04-13T16:26:04Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=132.5 files_done=105 resolved=2426 errors=4899 current=pytests/src/lib.rs
+[2026-04-13T16:26:54Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=133.3 files_done=106 resolved=2427 errors=4931 current=pyo3-ffi/src/pythonrun.rs
+[2026-04-13T16:27:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=134.0 files_done=109 resolved=2431 errors=4957 current=src/impl_/concat.rs
+[2026-04-13T16:28:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=135.3 files_done=112 resolved=2455 errors=5005 current=tests/test_pyerr_debug_unformattable.rs
+[2026-04-13T16:29:27Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=135.9 files_done=118 resolved=2468 errors=5028 current=examples/getitem/src/lib.rs
+[2026-04-13T16:30:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=136.7 files_done=120 resolved=2475 errors=5060 current=src/impl_/pyclass_init.rs
+[2026-04-13T16:31:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=137.5 files_done=121 resolved=2478 errors=5090 current=pyo3-macros/src/lib.rs
+[2026-04-13T16:31:46Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=138.2 files_done=122 resolved=2527 errors=5116 current=pyo3-ffi-check/build.rs
+[2026-04-13T16:32:29Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=138.9 files_done=126 resolved=2543 errors=5143 current=tests/test_datetime_import.rs
+[2026-04-13T16:33:01Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=139.4 files_done=129 resolved=2553 errors=5163 current=src/version.rs
+[2026-04-13T16:33:34Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=140.0 files_done=130 resolved=2579 errors=5184 current=tests/test_intopyobject.rs
+[2026-04-13T16:35:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=141.6 files_done=131 resolved=2605 errors=5246 current=pyo3-ffi/src/cpython/object.rs
+[2026-04-13T16:35:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=142.4 files_done=142 resolved=2612 errors=5276 current=pyo3-benches/benches/bench_intopyobject.rs
+[2026-04-13T16:38:29Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=144.9 files_done=148 resolved=2700 errors=5371 current=src/pyclass_init.rs
+[2026-04-13T16:39:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=145.6 files_done=152 resolved=2714 errors=5398 current=pyo3-ffi/src/longobject.rs
+[2026-04-13T16:40:02Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=146.4 files_done=155 resolved=2716 errors=5430 current=tests/ui/invalid_pymethod_enum.rs
+[2026-04-13T16:40:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=147.0 files_done=162 resolved=2734 errors=5451 current=tests/ui/static_ref.rs
+[2026-04-13T16:41:49Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=148.2 files_done=165 resolved=2768 errors=5498 current=src/tests/hygiene/pymodule.rs
+[2026-04-13T16:42:22Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=148.8 files_done=169 resolved=2777 errors=5519 current=src/impl_/pyclass/doc.rs
+[2026-04-13T16:43:06Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=149.5 files_done=176 resolved=2806 errors=5547 current=src/panic.rs
+[2026-04-13T16:43:49Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=150.2 files_done=182 resolved=2831 errors=5574 current=src/type_object.rs
+[2026-04-13T16:44:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=151.2 files_done=184 resolved=2840 errors=5611 current=src/types/memoryview.rs
+[2026-04-13T16:45:26Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=151.8 files_done=191 resolved=2864 errors=5635 current=pyo3-ffi/src/pyerrors.rs
+[2026-04-13T16:45:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=152.4 files_done=196 resolved=2867 errors=5655 current=src/types/frame.rs
+[2026-04-13T16:46:27Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=152.9 files_done=201 resolved=2877 errors=5674 current=pytests/src/path.rs
+[2026-04-13T16:47:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=153.5 files_done=213 resolved=2896 errors=5700 current=pyo3-ffi/src/bytesobject.rs
+[2026-04-13T16:47:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=154.1 files_done=225 resolved=2910 errors=5721 current=pyo3-ffi/src/iterobject.rs
+[2026-04-13T16:48:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=154.6 files_done=233 resolved=2918 errors=5740 current=tests/test_multiple_pymethods.rs
+[2026-04-13T16:48:42Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=155.1 files_done=258 resolved=2936 errors=5759 current=pyo3-ffi/src/cpython/pyhash.rs
+[2026-04-13T16:55:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=161.7 files_done=272 resolved=3052 errors=6007 current=pytests/tests/test_comparisons.py
+[2026-04-13T16:55:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=162.3 files_done=274 resolved=3054 errors=6028 current=pytests/tests/test_pyfunctions.py
+[2026-04-13T16:56:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=163.0 files_done=275 resolved=3054 errors=6056 current=pytests/tests/test_buf_and_str.py
+[2026-04-13T16:57:07Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=163.5 files_done=277 resolved=3104 errors=6076 current=guide/pyo3_version.py
+[2026-04-13T16:57:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=164.1 files_done=282 resolved=3154 errors=6099 current=pytests/tests/test_othermod.py
+[2026-04-13T16:58:34Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=165.0 files_done=288 resolved=3185 errors=6131 current=examples/decorator/tests/test_.py
+[2026-04-13T16:59:15Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=165.7 files_done=292 resolved=3190 errors=6157 current=emscripten/runner.py
+[2026-04-13T16:59:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=166.2 files_done=302 resolved=3206 errors=6177 current=examples/plugin/python_plugin/gadget_init_plugin.py
+[2026-04-13T17:00:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=166.7 files_done=311 resolved=3206 errors=6197 current=examples/word-count/word_count/__init__.py
+[2026-04-13T17:00:40Z] [iter=2] Target type resolved target_type=call_site resolved=3213 errors=6209 secs=9917 mem_mb=1056 MB
+[2026-04-13T17:00:40Z] [iter=2] Resolving target type target_type=import_statement count=1432
+[2026-04-13T17:00:49Z] [iter=2] HEARTBEAT target_type=import_statement elapsed_min=167.2 files_done=1 resolved=0 errors=0 current=src/impl_/pyclass/probes.rs
+[2026-04-13T17:01:16Z] [iter=2] Target type resolved target_type=import_statement resolved=763 errors=0 secs=36 mem_mb=1056 MB
+[2026-04-13T17:01:16Z] [iter=2] Resolving target type target_type=extends_clause count=31
+[2026-04-13T17:01:17Z] [iter=2] Target type resolved target_type=extends_clause resolved=29 errors=0 secs=1 mem_mb=1056 MB
+[2026-04-13T17:01:17Z] [iter=2] Resolving target type target_type=implements_clause count=407
+[2026-04-13T17:01:20Z] [iter=2] HEARTBEAT target_type=implements_clause elapsed_min=167.7 files_done=0 resolved=0 errors=0 current=pyo3-macros-backend/src/attributes.rs
+[2026-04-13T17:01:38Z] [iter=2] Target type resolved target_type=implements_clause resolved=142 errors=0 secs=21 mem_mb=1056 MB
+[2026-04-13T17:02:55Z] [iter=2] Step 5: Writing final enrichment file triples=228408
+[2026-04-13T17:03:00Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/743af645e7143be6abe2217aafaa0540cf532af4.nq.gz size_kb=5333
+[2026-04-13T17:03:00Z] [iter=2] Checkpoint cleared (enrichment complete)
+[2026-04-13T17:03:00Z] [iter=2] PHASE END: enrich elapsed_s=10165 elapsed_min=169.4 total_triples=228408
